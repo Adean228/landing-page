@@ -1,0 +1,111 @@
+/* Reset básico */
+:root {
+    --cor-principal: #ff4500; /* RGB(255, 69, 0) */
+    --cor-secundaria: #7f7c7c;
+    --cor-terciaria: #aaa;
+    --cor-fundo: #bababa; 
+
+}
+
+body, h1, h2, p, table, th, td {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto);
+}
+
+header {
+    background: var(--cor-secundaria);
+    color: var(--cor-texto);
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+main {
+    padding: 20px;
+}
+
+.pricing {
+    max-width: 800px;
+    margin: 0 auto;
+    background: var(--cor-texto);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+}
+
+.pricing h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    text-align: center;
+    color: var(--cor-principal);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid var(--cor-terciaria);
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background: var(--cor-secundaria);
+    color: var(--cor-texto);
+}
+
+tbody tr:nth-child(even) {
+    background: var(--cor-terciaria);
+}
+
+.btn {
+    display: inline-block;
+    padding: 5px 10px;
+    color: var(--cor-texto);
+    background: var(--cor-principal);
+    text-decoration: none;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.btn:hover {
+    background: #e43f00; /* Slightly darker shade of the primary color */
+}
+
+/* Estilização para o menu suspenso do método de pagamento */
+.payment-method {
+    width: 150px;
+    padding: 5px;
+    border: 1px solid var(--cor-terciaria);
+    border-radius: 6px;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto);
+}
+
+footer {
+    background: var(--cor-secundaria);
+    color: var(--cor-texto);
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
